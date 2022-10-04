@@ -224,6 +224,16 @@ namespace OlioProjekti
 
                 opettaja[i].OpettajaNimi = oppnimi;
             }
+
+            Opintojakso syksy1 = new Opintojakso();
+            Opintojakso syksy2 = new Opintojakso();
+            Opintojakso syksy3 = new Opintojakso();
+            Opintojakso talvi1 = new Opintojakso();
+            Opintojakso talvi2 = new Opintojakso();
+            Opintojakso talvi3 = new Opintojakso();
+            Opintojakso kevat1 = new Opintojakso();
+            Opintojakso kevat2 = new Opintojakso();
+            Opintojakso kevat3 = new Opintojakso();
         }
     }
 }
