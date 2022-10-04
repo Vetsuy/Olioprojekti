@@ -171,8 +171,17 @@ namespace OlioProjekti
 
             string[] Etunimet =
             {
-                "", "", "",
-                "", "", "",
+                "Mainio",   "Manne",    "Manu",
+                "Markku",   " Marko",   "Markus",
+                "Martti",   "Matias",   "Matti",
+                "Mauno",    "Maunu",    "Max",
+                "Mauri",    "Mies",     "Miika",
+                "Miikka",   "Mika",     "Mikael",
+                "Mikko",    "Miko",     "Milo",
+            };
+
+            string[] Sukunimet =
+            {
                 "", "", "",
                 "", "", "",
                 "", "", "",
@@ -182,7 +191,7 @@ namespace OlioProjekti
                 "", "", "",
             };
 
-            for(int i = 0; i < 27; i++)
+            for (int i = 0; i < 27; i++)
             {
                 Oppilas[] oppilas = new Oppilas[27];
                 oppilas[i] = new Oppilas();
