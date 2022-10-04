@@ -13,7 +13,7 @@ namespace OlioProjekti
         // Metodit
         public void Kirjaudu()                                                                  // "Kirjaa" käyttäjän sisään järjestelmään kun käyttäjä antaa käyttäjänimen ja salasanan
         {
-            Console.WriteLine("                | -Kirjaudu sisään- |");
+            Console.WriteLine("               | -Kirjaudu sisään- |");
             Console.WriteLine();
             Console.Write("Käyttäjänimi: ");
             kayttaja = Console.ReadLine();
