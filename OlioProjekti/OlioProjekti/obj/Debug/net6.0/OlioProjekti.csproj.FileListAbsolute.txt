@@ -1,0 +1,15 @@
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\bin\Debug\net6.0\OlioProjekti.exe
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\bin\Debug\net6.0\OlioProjekti.deps.json
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\bin\Debug\net6.0\OlioProjekti.runtimeconfig.json
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\bin\Debug\net6.0\OlioProjekti.dll
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\bin\Debug\net6.0\OlioProjekti.pdb
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\OlioProjekti.csproj.AssemblyReference.cache
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\OlioProjekti.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\OlioProjekti.AssemblyInfoInputs.cache
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\OlioProjekti.AssemblyInfo.cs
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\OlioProjekti.csproj.CoreCompileInputs.cache
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\OlioProjekti.dll
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\refint\OlioProjekti.dll
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\OlioProjekti.pdb
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\OlioProjekti.genruntimeconfig.cache
+C:\Users\eskel\Documents\GitHub\Olioprojekti\OlioProjekti\OlioProjekti\obj\Debug\net6.0\ref\OlioProjekti.dll
