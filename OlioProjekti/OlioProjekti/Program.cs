@@ -171,13 +171,17 @@ namespace OlioProjekti
 
             string[] Etunimet =
             {
-                "Mainio ",   "Manne ",    "Manu ",
-                "Markku ",   " Marko ",   "Markus ",
-                "Martti ",   "Matias ",   "Matti ",
-                "Mauno ",    "Maunu ",    "Max ",
-                "Mauri ",    "Mies ",     "Miika ",
-                "Miikka ",   "Mika ",     "Mikael ",
-                "Mikko ",    "Miko ",     "Milo ",
+                "Mainio ",    "Manne ",      "Manu ",
+                "Markku ",    "Marko ",      "Markus ",
+                "Martti ",    "Matias ",     "Matti ",
+                "Mauno ",     "Maunu ",      "Max ",
+                "Mauri ",     "Mies ",       "Miika ",
+                "Miikka ",    "Mika ",       "Mikael ",
+                "Mikko ",     "Miko ",       "Milo ",
+                "Nestori ",   "Niila ",      "Niilo ",
+                "Niki ",      "Niklas ",     "Niko ",
+                "Nikolai ",   "Nikodemus ",  "Nooa ",
+                "Noel ",      "Nuutti ",     "Nyyrikki ",
             };
 
             string[] Sukunimet =
@@ -189,19 +193,24 @@ namespace OlioProjekti
                 "Halmesmäki", "Halttu",      "Halvari",
                 "Hamanda",    "Hannus",      "Hanski",
                 "harjanne",   "Harva",       "Hautakoski",
+                "Kaipia",     "Kaisla",      "Kakkonen",
+                "Kivelä",     "Kanala",      "Kaukanen",
+                "Kaukola",    "Keinonen",    "Kerttula",
+                "Kiiveri",    "Kesäniemi",   "Kitunen",
             };
 
             for (int i = 0; i < 27; i++)
             {
-                Oppilas[] oppilas = new Oppilas[21];
+                Oppilas[] oppilas = new Oppilas[27];
                 oppilas[i] = new Oppilas();
-                number = rnd.Next(0, 21);
+
+                number = rnd.Next(0, 32);
                 int etunimi = number;
-                number = rnd.Next(0, 21);
-                string oppnimi = Etunimet[etunimi]+Sukunimet[number]
-                oppilas[i].OppilasNimi = Etunimet[number];
-                number = rnd.Next(0, 21);
-                
+                number = rnd.Next(0, 32);
+
+                string oppnimi = Etunimet[etunimi] + Sukunimet[number];
+                oppilas[i].OppilasNimi = oppnimi;
+                Console.WriteLine(oppilas[i].OppilasNimi);
             }
 
             for (int i = 0; i < 18; i++)
