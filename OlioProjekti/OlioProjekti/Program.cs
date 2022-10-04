@@ -164,7 +164,33 @@ namespace OlioProjekti
             Console.WriteLine();
 
             AMK amk = new();
-            amk.Kirjaudu();
+            // amk.Kirjaudu();
+
+            Random rnd = new Random();
+            int number = rnd.Next(0, 20);
+
+            string[] Etunimet =
+            {
+                "", "", "",
+                "", "", "",
+                "", "", "",
+                "", "", "",
+                "", "", "",
+                "", "", "",
+                "", "", "",
+                "", "", "",
+                "", "", "",
+            };
+
+            for(int i = 0; i < 27; i++)
+            {
+                Oppilas[] oppilas = new Oppilas[27];
+                oppilas[i] = new Oppilas();
+            }
+            for (int i = 0; i < 18; i++)
+            {
+
+            }
         }
     }
 }
