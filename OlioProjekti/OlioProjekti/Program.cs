@@ -182,13 +182,13 @@ namespace OlioProjekti
 
             string[] Sukunimet =
             {
-                "Haanpää", "Haapakoski", "Haavisto",
-                "Hangen", "Haikola", "Haka",
-                "Hakamäki", "Hakasalo", "Hakola",
-                "Halinen", "Halkola", "Halmela",
-                "Halmesmäki", "Halttu", "Halvari",
-                "Hamanda", "Hannus", "Hanski",
-                "harjanne", "Harva", "Hautakoski",
+                "Haanpää",    "Haapakoski",  "Haavisto",
+                "Hangen",     "Haikola",     "Haka",
+                "Hakamäki",   "Hakasalo",    "Hakola",
+                "Halinen",    "Halkola",     "Halmela",
+                "Halmesmäki", "Halttu",      "Halvari",
+                "Hamanda",    "Hannus",      "Hanski",
+                "harjanne",   "Harva",       "Hautakoski",
             };
 
             for (int i = 0; i < 27; i++)
