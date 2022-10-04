@@ -210,7 +210,9 @@ namespace OlioProjekti
 
                 oppilas[i].OppilasNimi = oppnimi;
             }
-            Console.WriteLine(oppilas[1].OppilasNimi)
+
+            Console.WriteLine(oppilas[1].OppilasNimi);
+
             for (int i = 0; i < 18; i++)                                                // Opettajien nimet ja oliot
             {
                 Opettaja[] opettaja = new Opettaja[18];
@@ -238,9 +240,9 @@ namespace OlioProjekti
             tutkinto2.TutkintoNimike = "Bioanalyytikko";
             tutkinto3.TutkintoNimike = "Hortonomi";
 
-            for (int i=0; i < 2; i++)
+            for (int i = 0; i < 2; i++)
             {
-                for (int i = 0; i < 2; i++)
+                for (int j = 0; j < 2; j++)
                 {
 
                 }
