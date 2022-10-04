@@ -198,6 +198,7 @@ namespace OlioProjekti
 
             Random rnd = new Random();                                                  // Tehdään rnd olio
             int number;                                                                 // Esitellään Random muuttuja
+
             Oppilas[] oppilas = new Oppilas[27];
             for (int i = 0; i < 27; i++)                                                // Oppilaiden nimet ja oliot
             {
@@ -225,7 +226,7 @@ namespace OlioProjekti
             }
 
             Opintojakso[] opintojakso = new Opintojakso[9];
-            for (int i=1; i < 10; i++)
+            for (int i = 0; i < 9; i++)
             {
                 opintojakso[i] = new Opettaja();
             }
@@ -238,19 +239,20 @@ namespace OlioProjekti
             tutkinto2.TutkintoNimike = "Bioanalyytikko";
             tutkinto3.TutkintoNimike = "Hortonomi";
 
-            for (int i = 1; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 opintojakso[i].OpintoNimike = "syksy" + i;
             }
-            for (int i = 1; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 opintojakso[i + 3].OpintoNimike = "talvi" + i;
             }
-            for (int i = 1; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 opintojakso[i + 6].OpintoNimike = "kevät" + i;
             }
-            Console.WriteLine(opintojakso[3].OpintoNimike);
+
+            Console.WriteLine(opintojakso[0].OpintoNimike);
         }
     }
 }
