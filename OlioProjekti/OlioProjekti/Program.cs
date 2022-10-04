@@ -116,7 +116,7 @@ namespace OlioProjekti
             laskuri++;
         }
 
-        //setteri ja getterit
+        // setteri ja getterit
         public string OppilasNimi
         {
             set { oppilasNimi = value; }
@@ -200,7 +200,7 @@ namespace OlioProjekti
             int number;                                                                 // Esitellään Random muuttuja
 
             Oppilas[] oppilas = new Oppilas[27];                                        // Tehdään uudet oliot oppilaille
-            for (int i = 0; i < 27; i++)                                                // Nimetään oppilaat ja oliot
+            for (int i = 0; i < 27; i++)                                                // Luodaan sekä nimetään oppilaat ja oliot
             {
                 oppilas[i] = new Oppilas();
 
@@ -213,7 +213,7 @@ namespace OlioProjekti
             }
 
             Opettaja[] opettaja = new Opettaja[18];                                     // Tehdään uudet oliot opettajille
-            for (int i = 0; i < 18; i++)                                                // Nimetään opettajat ja oliot
+            for (int i = 0; i < 18; i++)                                                // Luodaan sekä nimetään opettajat ja oliot
             {
                 opettaja[i] = new Opettaja();
 
@@ -225,11 +225,11 @@ namespace OlioProjekti
                 opettaja[i].OpettajaNimi = oppnimi;
             }
 
-            Tutkinto tutkinto1 = new Tutkinto();                                        // Tutkintojen oliot
+            Tutkinto tutkinto1 = new Tutkinto();                                        // Luodaan Tutkintojen oliot
             Tutkinto tutkinto2 = new Tutkinto();
             Tutkinto tutkinto3 = new Tutkinto();
 
-            tutkinto1.TutkintoNimike = "Tieto ja viestintätekniikka";                   // Tutkinotojen olioiden
+            tutkinto1.TutkintoNimike = "Tieto ja viestintätekniikka";                   // Annetaan TutkintoNimikkeiden arvot
             tutkinto2.TutkintoNimike = "Bioanalyytikko";
             tutkinto3.TutkintoNimike = "Hortonomi";
 
