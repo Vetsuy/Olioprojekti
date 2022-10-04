@@ -238,18 +238,23 @@ namespace OlioProjekti
             tutkinto1.TutkintoNimike = "Tieto ja viestintätekniikka";
             tutkinto2.TutkintoNimike = "Bioanalyytikko";
             tutkinto3.TutkintoNimike = "Hortonomi";
-
+            int fgg = 1
             for (int i = 0; i < 2; i++)
             {
-                opintojakso[i].OpintoNimike = "syksy" + i;
+                opintojakso[i].OpintoNimike = "syksy" + fgg;
+                fgg++;
             }
+            fgg = 1
             for (int i = 0; i < 2; i++)
             {
-                opintojakso[i + 3].OpintoNimike = "talvi" + i;
+                opintojakso[i + 3].OpintoNimike = "talvi" + fgg;
+                fgg++;
             }
+            fgg = 1
             for (int i = 0; i < 2; i++)
             {
                 opintojakso[i + 6].OpintoNimike = "kevät" + i;
+                fgg++;
             }
 
             Console.WriteLine(opintojakso[0].OpintoNimike);
