@@ -171,13 +171,13 @@ namespace OlioProjekti
 
             string[] Etunimet =
             {
-                "Mainio",   "Manne",    "Manu",
-                "Markku",   " Marko",   "Markus",
-                "Martti",   "Matias",   "Matti",
-                "Mauno",    "Maunu",    "Max",
-                "Mauri",    "Mies",     "Miika",
-                "Miikka",   "Mika",     "Mikael",
-                "Mikko",    "Miko",     "Milo",
+                "Mainio ",   "Manne ",    "Manu ",
+                "Markku ",   " Marko ",   "Markus ",
+                "Martti ",   "Matias ",   "Matti ",
+                "Mauno ",    "Maunu ",    "Max ",
+                "Mauri ",    "Mies ",     "Miika ",
+                "Miikka ",   "Mika ",     "Mikael ",
+                "Mikko ",    "Miko ",     "Milo ",
             };
 
             string[] Sukunimet =
@@ -196,10 +196,12 @@ namespace OlioProjekti
                 Oppilas[] oppilas = new Oppilas[21];
                 oppilas[i] = new Oppilas();
                 number = rnd.Next(0, 21);
+                int etunimi = number;
+                number = rnd.Next(0, 21);
+                string oppnimi = Etunimet[etunimi]+Sukunimet[number]
                 oppilas[i].OppilasNimi = Etunimet[number];
                 number = rnd.Next(0, 21);
-                oppilas[i].OppilasNimi = Etunimet[number];
-                Console.WriteLine(oppilas[10].OppilasNimi);
+                
             }
 
             for (int i = 0; i < 18; i++)
