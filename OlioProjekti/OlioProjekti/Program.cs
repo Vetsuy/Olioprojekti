@@ -234,6 +234,16 @@ namespace OlioProjekti
             Opintojakso kevat1 = new Opintojakso();
             Opintojakso kevat2 = new Opintojakso();
             Opintojakso kevat3 = new Opintojakso();
+
+            Tutkinto tutkinto1 = new Tutkinto();
+            Tutkinto tutkinto2 = new Tutkinto();
+            Tutkinto tutkinto3 = new Tutkinto();
+
+            tutkinto1.TutkintoNimike = "Tieto ja viestintätekniikka";
+            tutkinto2.TutkintoNimike = "Bioanalyytikko";
+            tutkinto3.TutkintoNimike = "Hortonomi";
+
+
         }
     }
 }
