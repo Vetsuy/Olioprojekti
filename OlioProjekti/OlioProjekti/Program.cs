@@ -165,7 +165,6 @@ namespace OlioProjekti
 
             AMK amk = new();
             amk.Kirjaudu();
-            Console.WriteLine("Yep");
         }
     }
 }
