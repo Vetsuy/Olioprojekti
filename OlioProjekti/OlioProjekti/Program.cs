@@ -167,7 +167,7 @@ namespace OlioProjekti
             // amk.Kirjaudu();
 
             Random rnd = new Random();
-            int number = rnd.Next(0, 20);
+            int number = rnd.Next(0, 21);
 
             string[] Etunimet =
             {
@@ -195,6 +195,10 @@ namespace OlioProjekti
             {
                 Oppilas[] oppilas = new Oppilas[27];
                 oppilas[i] = new Oppilas();
+                number = rnd.Next(0, 21);
+                oppilas[i].OppilasNimi = Etunimet[number];
+                number = rnd.Next(0, 21);
+                oppilas[i].OppilasNimi = Etunimet[number]
             }
             for (int i = 0; i < 18; i++)
             {
