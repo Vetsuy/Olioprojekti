@@ -225,7 +225,7 @@ namespace OlioProjekti
             }
 
             Opintojakso[] opintojakso = new Opintojakso[9];
-            for (int i=0; i < 9; i++)
+            for (int i=1; i < 10; i++)
             {
                 opintojakso[i] = new Opettaja();
             }
@@ -242,8 +242,15 @@ namespace OlioProjekti
             {
                 opintojakso[i].OpintoNimike = "syksy" + i;
             }
-
-            Console.WriteLine(opintojakso[1].OpintoNimike);
+            for (int i = 1; i < 3; i++)
+            {
+                opintojakso[i + 3].OpintoNimike = "talvi" + i;
+            }
+            for (int i = 1; i < 3; i++)
+            {
+                opintojakso[i + 6].OpintoNimike = "kevät" + i;
+            }
+            Console.WriteLine(opintojakso[3].OpintoNimike);
         }
     }
 }
