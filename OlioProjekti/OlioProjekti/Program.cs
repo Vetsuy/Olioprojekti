@@ -211,11 +211,9 @@ namespace OlioProjekti
                 oppilas[i].OppilasNimi = oppnimi;
             }
 
-            Console.WriteLine(oppilas[1].OppilasNimi);
-
+            Opettaja[] opettaja = new Opettaja[18];
             for (int i = 0; i < 18; i++)                                                // Opettajien nimet ja oliot
             {
-                Opettaja[] opettaja = new Opettaja[18];
                 opettaja[i] = new Opettaja();
 
                 number = rnd.Next(0, 32);
@@ -225,10 +223,10 @@ namespace OlioProjekti
 
                 opettaja[i].OpettajaNimi = oppnimi;
             }
-            
+
+            Opintojakso[] opintojakso = new Opintojakso[9];
             for (int i=0; i < 9; i++)
             {
-                Opintojakso[] opintojakso = new Opintojakso[9];
                 opintojakso[i] = new Opettaja();
             }
 
@@ -242,10 +240,7 @@ namespace OlioProjekti
 
             for (int i = 0; i < 2; i++)
             {
-                for (int j = 0; j < 2; j++)
-                {
-
-                }
+                opintojakso[i].OpintoNimike = "syksy"+ i+1
             }
         }
     }
