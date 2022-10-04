@@ -166,10 +166,7 @@ namespace OlioProjekti
             AMK amk = new();
             // amk.Kirjaudu();
 
-            Random rnd = new Random();
-            int number = rnd.Next(0, 21);
-
-            string[] Etunimet =
+            string[] Etunimet =                                                         // Etunimien sanapankki
             {
                 "Mainio ",    "Manne ",      "Manu ",
                 "Markku ",    "Marko ",      "Markus ",
@@ -184,7 +181,7 @@ namespace OlioProjekti
                 "Noel ",      "Nuutti ",     "Nyyrikki ",
             };
 
-            string[] Sukunimet =
+            string[] Sukunimet =                                                        // Sukunimien sanapankki
             {
                 "Haanpää",    "Haapakoski",  "Haavisto",
                 "Hangen",     "Haikola",     "Haka",
@@ -199,7 +196,10 @@ namespace OlioProjekti
                 "Kiiveri",    "Kesäniemi",   "Kitunen",
             };
 
-            for (int i = 0; i < 27; i++)
+            Random rnd = new Random();                                                  // Tehdään rnd olio
+            int number;                                                                 // Esitellään Random muuttuja
+
+            for (int i = 0; i < 27; i++)                                                // Oppilaiden nimet ja oliot
             {
                 Oppilas[] oppilas = new Oppilas[27];
                 oppilas[i] = new Oppilas();
@@ -207,15 +207,22 @@ namespace OlioProjekti
                 number = rnd.Next(0, 32);
                 int etunimi = number;
                 number = rnd.Next(0, 32);
-
                 string oppnimi = Etunimet[etunimi] + Sukunimet[number];
+
                 oppilas[i].OppilasNimi = oppnimi;
-                Console.WriteLine(oppilas[i].OppilasNimi);
             }
 
-            for (int i = 0; i < 18; i++)
+            for (int i = 0; i < 18; i++)                                                // Opettajien nimet ja oliot
             {
+                Opettaja[] opettaja = new Opettaja[18];
+                opettaja[i] = new Opettaja();
 
+                number = rnd.Next(0, 32);
+                int etunimi = number;
+                number = rnd.Next(0, 32);
+                string oppnimi = Etunimet[etunimi] + Sukunimet[number];
+
+                opettaja[i].OpettajaNimi = oppnimi;
             }
         }
     }
