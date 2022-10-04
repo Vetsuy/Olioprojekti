@@ -200,6 +200,7 @@ namespace OlioProjekti
                 number = rnd.Next(0, 21);
                 oppilas[i].OppilasNimi = Etunimet[number];
             }
+
             for (int i = 0; i < 18; i++)
             {
 
