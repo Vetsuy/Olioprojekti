@@ -193,12 +193,13 @@ namespace OlioProjekti
 
             for (int i = 0; i < 27; i++)
             {
-                Oppilas[] oppilas = new Oppilas[27];
+                Oppilas[] oppilas = new Oppilas[21];
                 oppilas[i] = new Oppilas();
                 number = rnd.Next(0, 21);
                 oppilas[i].OppilasNimi = Etunimet[number];
                 number = rnd.Next(0, 21);
                 oppilas[i].OppilasNimi = Etunimet[number];
+                Console.WriteLine(oppilas[10].OppilasNimi);
             }
 
             for (int i = 0; i < 18; i++)
