@@ -198,10 +198,9 @@ namespace OlioProjekti
 
             Random rnd = new Random();                                                  // Tehdään rnd olio
             int number;                                                                 // Esitellään Random muuttuja
-
+            Oppilas[] oppilas = new Oppilas[27];
             for (int i = 0; i < 27; i++)                                                // Oppilaiden nimet ja oliot
             {
-                Oppilas[] oppilas = new Oppilas[27];
                 oppilas[i] = new Oppilas();
 
                 number = rnd.Next(0, 32);
@@ -211,7 +210,7 @@ namespace OlioProjekti
 
                 oppilas[i].OppilasNimi = oppnimi;
             }
-
+            Console.WriteLine(oppilas[1].OppilasNimi)
             for (int i = 0; i < 18; i++)                                                // Opettajien nimet ja oliot
             {
                 Opettaja[] opettaja = new Opettaja[18];
@@ -224,7 +223,7 @@ namespace OlioProjekti
 
                 opettaja[i].OpettajaNimi = oppnimi;
             }
-
+            
             for (int i=0; i < 9; i++)
             {
                 Opintojakso[] opintojakso = new Opintojakso[9];
@@ -239,7 +238,13 @@ namespace OlioProjekti
             tutkinto2.TutkintoNimike = "Bioanalyytikko";
             tutkinto3.TutkintoNimike = "Hortonomi";
 
+            for (int i=0; i < 2; i++)
+            {
+                for (int i = 0; i < 2; i++)
+                {
 
+                }
+            }
         }
     }
 }
