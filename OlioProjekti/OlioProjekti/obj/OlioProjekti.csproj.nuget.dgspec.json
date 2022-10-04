@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eskel\\source\\repos\\OlioProjekti\\OlioProjekti\\OlioProjekti.csproj": {}
+    "C:\\Users\\eskel\\Documents\\GitHub\\Olioprojekti\\OlioProjekti\\OlioProjekti\\OlioProjekti.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eskel\\source\\repos\\OlioProjekti\\OlioProjekti\\OlioProjekti.csproj": {
+    "C:\\Users\\eskel\\Documents\\GitHub\\Olioprojekti\\OlioProjekti\\OlioProjekti\\OlioProjekti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eskel\\source\\repos\\OlioProjekti\\OlioProjekti\\OlioProjekti.csproj",
+        "projectUniqueName": "C:\\Users\\eskel\\Documents\\GitHub\\Olioprojekti\\OlioProjekti\\OlioProjekti\\OlioProjekti.csproj",
         "projectName": "OlioProjekti",
-        "projectPath": "C:\\Users\\eskel\\source\\repos\\OlioProjekti\\OlioProjekti\\OlioProjekti.csproj",
+        "projectPath": "C:\\Users\\eskel\\Documents\\GitHub\\Olioprojekti\\OlioProjekti\\OlioProjekti\\OlioProjekti.csproj",
         "packagesPath": "C:\\Users\\eskel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eskel\\source\\repos\\OlioProjekti\\OlioProjekti\\obj\\",
+        "outputPath": "C:\\Users\\eskel\\Documents\\GitHub\\Olioprojekti\\OlioProjekti\\OlioProjekti\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eskel\\AppData\\Roaming\\NuGet\\NuGet.Config",
