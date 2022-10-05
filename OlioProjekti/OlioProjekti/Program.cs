@@ -247,6 +247,16 @@ namespace OlioProjekti
                 opintojakso[i + 6].OpintoNimike = "kevät" + plus;
                 plus++;
             }
+
+            opintojakso[0].Tutkinto = "Tieto ja viestintätekniikka";
+            opintojakso[1].Tutkinto = "Bioanalyytikko";
+            opintojakso[2].Tutkinto = "Hortonomi";
+            opintojakso[3].Tutkinto = "Tieto ja viestintätekniikka";
+            opintojakso[4].Tutkinto = "Bioanalyytikko";
+            opintojakso[5].Tutkinto = "Hortonomi";
+            opintojakso[6].Tutkinto = "Tieto ja viestintätekniikka";
+            opintojakso[7].Tutkinto = "Bioanalyytikko";
+            opintojakso[8].Tutkinto = "Hortonomi";
         }
     }
 }
