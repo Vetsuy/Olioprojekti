@@ -39,7 +39,7 @@ namespace OlioProjekti
         private string tutkintoNimike;
 
         // Metodit
-        public void TulostaOpintojaksoTiedot()
+        public void TulostaTutkintoTiedot()
         {
 
         }
@@ -65,9 +65,12 @@ namespace OlioProjekti
         private int oppilas_luku, opettaja_luku;
 
         // Metodit
-        public void TulostaTutkintoTiedot()
+        public void TulostaOpintojaksoTiedot()
         {
-
+            Console.WriteLine("Syksy");
+            Console.WriteLine("Talvi");
+            Console.WriteLine("Kevät");
+            Console.WriteLine("");
         }
 
         // Oletuskonstruktori
