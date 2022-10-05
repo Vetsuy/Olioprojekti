@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace OlioProjekti
 {
@@ -38,12 +39,6 @@ namespace OlioProjekti
         // Kentät
         private string tutkintoNimike;
 
-        // Metodit
-        public void TulostaTutkintoTiedot()
-        {
-
-        }
-
         // Oletuskonstruktori
         public Tutkinto()
         {
@@ -64,22 +59,15 @@ namespace OlioProjekti
         private string opintoNimike, tutkinto;
         private int oppilas_luku, opettaja_luku;
 
-        // Metodit
-        public void TulostaOpintojaksoTiedot()
-        {
-            Console.WriteLine("Syksy");
-            Console.WriteLine("Talvi");
-            Console.WriteLine("Kevät");
-            Console.WriteLine("");
-        }
+        
 
         // Oletuskonstruktori
         public Opintojakso()
         {
             opintoNimike = "";
             tutkinto = "";
-            oppilas_luku = 0;
-            opettaja_luku = 0;
+            oppilas_luku = 3;
+            opettaja_luku = 2;
         }
 
         // Setterit ja getterit
@@ -223,9 +211,9 @@ namespace OlioProjekti
                 number = rnd.Next(0, 32);
                 int etunimi = number;
                 number = rnd.Next(0, 32);
-                string oppnimi = Etunimet[etunimi] + Sukunimet[number];
+                string openimi = Etunimet[etunimi] + Sukunimet[number];
 
-                opettaja[i].OpettajaNimi = oppnimi;
+                opettaja[i].OpettajaNimi = openimi;
             }
 
             Tutkinto tutkinto1 = new Tutkinto();                                        // Luodaan Tutkintojen oliot
@@ -245,13 +233,13 @@ namespace OlioProjekti
             int plus = 1;
             for (int i = 0; i <= 2; i++)                                                // Nimetään opintoNimike
             {
-                opintojakso[i].OpintoNimike = "syksy" + plus;
-                opintojakso[i + 3].OpintoNimike = "talvi" + plus;
-                opintojakso[i + 6].OpintoNimike = "kevät" + plus;
+                opintojakso[i].OpintoNimike = "Syksy " + plus;
+                opintojakso[i + 3].OpintoNimike = "Talvi " + plus;
+                opintojakso[i + 6].OpintoNimike = "Kevät " + plus;
                 plus++;
             }
 
-            opintojakso[0].Tutkinto = "Tieto ja viestintätekniikka";
+            opintojakso[0].Tutkinto = "Tieto ja viestintätekniikka";                    // OpintoJakson tutkinta kentän arvot
             opintojakso[1].Tutkinto = "Bioanalyytikko";
             opintojakso[2].Tutkinto = "Hortonomi";
             opintojakso[3].Tutkinto = "Tieto ja viestintätekniikka";
@@ -259,7 +247,250 @@ namespace OlioProjekti
             opintojakso[5].Tutkinto = "Hortonomi";
             opintojakso[6].Tutkinto = "Tieto ja viestintätekniikka";
             opintojakso[7].Tutkinto = "Bioanalyytikko";
-            opintojakso[8].Tutkinto = "Hortonomi";
+            opintojakso[8].Tutkinto = "Hortonomi";                                      // OpintoJakson tutkinta kentän arvot
+
+
+
+            for (int i = 0; i < 27; i++)                                                // Antaa 
+            {
+                if (i < 0 || i > 26)
+                {
+                    Console.WriteLine("Jokin meni pieleen.");
+                    return;
+                }
+                if (i < 3)
+                {
+                    oppilas[i].OppilasOpintojakso = "Syksy 1";
+                }
+                else if (i < 6)
+                {
+                    oppilas[i].OppilasOpintojakso = "Syksy 2";
+                }
+                else if (i < 9)
+                {
+                    oppilas[i].OppilasOpintojakso = "Syksy 3";
+                }
+                else if (i < 12)
+                {
+                    oppilas[i].OppilasOpintojakso = "Talvi 1";
+                }
+                else if (i < 15)
+                {
+                    oppilas[i].OppilasOpintojakso = "Talvi 2";
+                }
+                else if (i < 18)
+                {
+                    oppilas[i].OppilasOpintojakso = "Talvi 3";
+                }
+                else if (i < 21)
+                {
+                    oppilas[i].OppilasOpintojakso = "Kevät 1";
+                }
+                else if (i < 24)
+                {
+                    oppilas[i].OppilasOpintojakso = "Kevät 2";
+                }
+                else if (i < 27)
+                {
+                    oppilas[i].OppilasOpintojakso = "Kevät 3";
+                }
+            }
+
+            for (int i = 0; i < 18; i++)
+            {
+                if (i < 0 || i > 17)
+                {
+                    Console.WriteLine("Jokin meni pieleen.");
+                    return;
+                }
+                if (i < 2)
+                {
+                    opettaja[i].OpettajaOpintojakso = "Syksy 1";
+                }
+                else if (i < 4)
+                {
+                    opettaja[i].OpettajaOpintojakso = "Syksy 2";
+                }
+                else if (i < 6)
+                {
+                    opettaja[i].OpettajaOpintojakso = "Syksy 3";
+                }
+                else if (i < 8)
+                {
+                    opettaja[i].OpettajaOpintojakso = "Talvi 1";
+                }
+                else if (i < 10)
+                {
+                    opettaja[i].OpettajaOpintojakso = "Talvi 2";
+                }
+                else if (i < 12)
+                {
+                    opettaja[i].OpettajaOpintojakso = "Talvi 3";
+                }
+                else if (i < 14)
+                {
+                    opettaja[i].OpettajaOpintojakso = "Kevät 1";
+                }
+                else if (i < 16)
+                {
+                    opettaja[i].OpettajaOpintojakso = "Kevät 2";
+                }
+                else if (i < 18)
+                {
+                    opettaja[i].OpettajaOpintojakso = "Kevät 3";
+                }
+            }
+
+            opintoAlku:
+            Console.WriteLine("Valitse tutkinto alla olevista vaihtoehdoista");
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine(" Tieto ja viestintätekniikka..........[1]");
+            Console.WriteLine(" Bioanalyytikko.......................[2]");
+            Console.WriteLine(" Hortonomi............................[3]");
+            Console.WriteLine("------------------------------------------");
+            Console.Write(">> ");
+            int valinta = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            string[] OpintojaksoTaulukko = new string[3];
+
+            int laskuri = 0;
+            switch (valinta)
+            {
+                case 1:
+                    for (int i = 0; i < 9; i++)
+                    {
+                        if (opintojakso[i].Tutkinto == "Tieto ja viestintätekniikka")
+                        {
+                            OpintojaksoTaulukko[laskuri] = opintojakso[i].OpintoNimike;
+                            laskuri++;
+                        }
+                    }
+                    break;
+
+                case 2:
+                    for (int i = 0; i < 9; i++)
+                    {
+                        if (opintojakso[i].Tutkinto == "Bioanalyytikko")
+                        {
+                            OpintojaksoTaulukko[laskuri] = opintojakso[i].OpintoNimike;
+                            laskuri++;
+                        }
+                    }
+                    break;
+
+                case 3:
+                    for (int i = 0; i < 9; i++)
+                    {
+                        if (opintojakso[i].Tutkinto == "Hortonomi")
+                        {
+                            OpintojaksoTaulukko[laskuri] = opintojakso[i].OpintoNimike;
+                            laskuri++;
+                        }
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("!!! Annoit väärän arvon, yritä uudelleen. !!!");
+                    Console.WriteLine();
+                    goto opintoAlku;
+            }
+
+            Alku:
+            Console.WriteLine("Valitse opintojakso alla olevista vaihtoehdoista");
+            Console.WriteLine("----------------------");
+            Console.WriteLine(" {0}..........[1]", OpintojaksoTaulukko[0]);
+            Console.WriteLine(" {0}..........[2]", OpintojaksoTaulukko[1]);
+            Console.WriteLine(" {0}..........[3]", OpintojaksoTaulukko[2]);
+            Console.WriteLine("----------------------");
+            Console.Write(">> ");
+            int valinta1 = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            string[] OppilasTaulukko = new string[3];
+            string[] OpettajaTaulukko = new string[2];
+
+            laskuri = 0;
+            switch (valinta1)
+            {
+                case 1:
+                    for (int i = 0; i < 27; i++)
+                    {
+                        if (oppilas[i].OppilasOpintojakso == OpintojaksoTaulukko[0])
+                        {
+                            OppilasTaulukko[laskuri] = oppilas[i].OppilasNimi;
+                            laskuri++;
+                        }
+                    }
+
+                    laskuri = 0;
+
+                    for (int i = 0; i < 18; i++)
+                    {
+                        if (opettaja[i].OpettajaOpintojakso == OpintojaksoTaulukko[0])
+                        {
+                            OpettajaTaulukko[laskuri] = opettaja[i].OpettajaNimi;
+                            laskuri++;
+                        }
+                    }
+                    break;
+
+                case 2:
+                    for (int i = 0; i < 27; i++)
+                    {
+                        if (oppilas[i].OppilasOpintojakso == OpintojaksoTaulukko[1])
+                        {
+                            OppilasTaulukko[laskuri] = oppilas[i].OppilasNimi;
+                            laskuri++;
+                        }
+                    }
+
+                    laskuri = 0;
+
+                    for (int i = 0; i < 18; i++)
+                    {
+                        if (opettaja[i].OpettajaOpintojakso == OpintojaksoTaulukko[0])
+                        {
+                            OpettajaTaulukko[laskuri] = opettaja[i].OpettajaNimi;
+                            laskuri++;
+                        }
+                    }
+                    break;
+
+                case 3:
+                    for (int i = 0; i < 27; i++)
+                    {
+                        if (oppilas[i].OppilasOpintojakso == OpintojaksoTaulukko[2])
+                        {
+                            OppilasTaulukko[laskuri] = oppilas[i].OppilasNimi;
+                            laskuri++;
+                        }
+                    }
+
+                    laskuri = 0;
+
+                    for (int i = 0; i < 18; i++)
+                    {
+                        if (opettaja[i].OpettajaOpintojakso == OpintojaksoTaulukko[0])
+                        {
+                            OpettajaTaulukko[laskuri] = opettaja[i].OpettajaNimi;
+                            laskuri++;
+                        }
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("!!! Annoit väärän arvon, yritä uudelleen. !!!");
+                    Console.WriteLine();
+                    goto Alku;
+            }
+
+            Console.WriteLine("Tässä on {0} osallistujat:", OpintojaksoTaulukko[valinta1 - 1]);
+            Console.WriteLine("-----------------------------------------------------------------------------------------");
+            Console.WriteLine(" Osallistuvia oppilaita on {0}. Oppilaat ovat: {1}, {2}, {3}", OppilasTaulukko.Length, OppilasTaulukko[0], OppilasTaulukko[1], OppilasTaulukko[2]);
+            Console.WriteLine(" Osallistuvia opettajia on {0}. Opettajat ovat: {1}, {2}", OpettajaTaulukko.Length, OpettajaTaulukko[0], OpettajaTaulukko[1]);
+            Console.WriteLine("-----------------------------------------------------------------------------------------");
+
         }
     }
 }
