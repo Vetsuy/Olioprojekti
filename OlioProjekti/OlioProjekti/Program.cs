@@ -239,13 +239,13 @@ namespace OlioProjekti
                 opintojakso[i] = new Opettaja();
             }
 
-            int fgg = 1;
+            int plus = 1;
             for (int i = 0; i <= 2; i++)                                                // Nimetään opintoNimike
             {
-                opintojakso[i].OpintoNimike = "syksy" + fgg;
-                opintojakso[i + 3].OpintoNimike = "talvi" + fgg;
-                opintojakso[i + 6].OpintoNimike = "kevät" + fgg;
-                fgg++;
+                opintojakso[i].OpintoNimike = "syksy" + plus;
+                opintojakso[i + 3].OpintoNimike = "talvi" + plus;
+                opintojakso[i + 6].OpintoNimike = "kevät" + plus;
+                plus++;
             }
         }
     }
