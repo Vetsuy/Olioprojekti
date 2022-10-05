@@ -251,7 +251,7 @@ namespace OlioProjekti
 
 
 
-            for (int i = 0; i < 27; i++)                                                // Antaa 
+            for (int i = 0; i < 27; i++)                                                // Antaa oppilas olioden oppilasopintojakso kentälle arvon
             {
                 if (i < 0 || i > 26)
                 {
@@ -296,7 +296,7 @@ namespace OlioProjekti
                 }
             }
 
-            for (int i = 0; i < 18; i++)
+            for (int i = 0; i < 18; i++)                                    // antaa opettaja olilioden opettajaOpintojakso kentälle arvon
             {
                 if (i < 0 || i > 17)
                 {
@@ -342,7 +342,7 @@ namespace OlioProjekti
             }
 
             opintoAlku:
-            Console.WriteLine("Valitse tutkinto alla olevista vaihtoehdoista");
+            Console.WriteLine("Valitse tutkinto alla olevista vaihtoehdoista");             // kysymis taulukko
             Console.WriteLine("------------------------------------------");
             Console.WriteLine(" Tieto ja viestintätekniikka..........[1]");
             Console.WriteLine(" Bioanalyytikko.......................[2]");
@@ -352,10 +352,10 @@ namespace OlioProjekti
             int valinta = int.Parse(Console.ReadLine());
             Console.WriteLine();
 
-            string[] OpintojaksoTaulukko = new string[3];
+            string[] OpintojaksoTaulukko = new string[3];           // luodaan uusi aray
 
-            int laskuri = 0;
-            switch (valinta)
+            int laskuri = 0;        
+            switch (valinta)                                                            // laitetaan arayhin opintojaksot jotka ovat osana valittua tutkintoa
             {
                 case 1:
                     for (int i = 0; i < 9; i++)
@@ -397,7 +397,7 @@ namespace OlioProjekti
             }
 
             Alku:
-            Console.WriteLine("Valitse opintojakso alla olevista vaihtoehdoista");
+            Console.WriteLine("Valitse opintojakso alla olevista vaihtoehdoista");          // kysyntä taulukko
             Console.WriteLine("----------------------");
             Console.WriteLine(" {0}..........[1]", OpintojaksoTaulukko[0]);
             Console.WriteLine(" {0}..........[2]", OpintojaksoTaulukko[1]);
@@ -407,11 +407,11 @@ namespace OlioProjekti
             int valinta1 = int.Parse(Console.ReadLine());
             Console.WriteLine();
 
-            string[] OppilasTaulukko = new string[3];
-            string[] OpettajaTaulukko = new string[2];
+            string[] OppilasTaulukko = new string[3];                                       // tehdään uusi aray
+            string[] OpettajaTaulukko = new string[2];                                      // tehdäänt uusi aray
 
             laskuri = 0;
-            switch (valinta1)
+            switch (valinta1)                                                               // tallenetaan opilaiten nimet arayhin jotka ovat osana valittua opintojaksoa
             {
                 case 1:
                     for (int i = 0; i < 27; i++)
@@ -447,7 +447,7 @@ namespace OlioProjekti
 
                     laskuri = 0;
 
-                    for (int i = 0; i < 18; i++)
+                    for (int i = 0; i < 18; i++)                                            // tallenetaan opettaijien nimet arayhin jotka ovat osana valittua opintojaksoa
                     {
                         if (opettaja[i].OpettajaOpintojakso == OpintojaksoTaulukko[0])
                         {
@@ -485,7 +485,7 @@ namespace OlioProjekti
                     goto Alku;
             }
 
-            Console.WriteLine("Tässä on {0} osallistujat:", OpintojaksoTaulukko[valinta1 - 1]);
+            Console.WriteLine("Tässä on {0} osallistujat:", OpintojaksoTaulukko[valinta1 - 1]);                                         //tulostetaan mikä opintoajakso on ja monta opetajaa ja oppilasta on kursilla ja niiden nimet
             Console.WriteLine("-----------------------------------------------------------------------------------------");
             Console.WriteLine(" Osallistuvia oppilaita on {0}. Oppilaat ovat: {1}, {2}, {3}", OppilasTaulukko.Length, OppilasTaulukko[0], OppilasTaulukko[1], OppilasTaulukko[2]);
             Console.WriteLine(" Osallistuvia opettajia on {0}. Opettajat ovat: {1}, {2}", OpettajaTaulukko.Length, OpettajaTaulukko[0], OpettajaTaulukko[1]);
