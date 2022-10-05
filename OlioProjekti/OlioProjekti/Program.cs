@@ -12,7 +12,7 @@ namespace OlioProjekti
         private string salasana;
 
         // Metodit
-        public void Kirjaudu()                                                                  // "Kirjaa" käyttäjän sisään järjestelmään kun käyttäjä antaa käyttäjänimen ja salasanan
+        public void Kirjaudu()                                                                                                                                                              // "Kirjaa" käyttäjän sisään järjestelmään kun käyttäjä antaa käyttäjänimen ja salasanan
         {
             Console.WriteLine("                | -Luo uusi käyttäjä- |");
             Console.WriteLine();
@@ -39,7 +39,7 @@ namespace OlioProjekti
             }
 
             Console.WriteLine();
-            Console.WriteLine("Tervetuloa käyttämään järjestelmäämme {0}!", kayttaja);
+            Console.WriteLine("Tervetuloa käyttämään {0}n järjestelmää {1}!", AMKnimike, kayttaja);
             Console.WriteLine();
         }
 
@@ -175,7 +175,7 @@ namespace OlioProjekti
             AMK amk = new();
             amk.Kirjaudu();
 
-            string[] Etunimet =                                                         // Etunimien sanapankki
+            string[] Etunimet =                                                                                                                                                         // Etunimien sanapankki
             {
                 "Mainio ",    "Manne ",      "Manu ",
                 "Markku ",    "Marko ",      "Markus ",
@@ -190,7 +190,7 @@ namespace OlioProjekti
                 "Noel ",      "Nuutti ",     "Nyyrikki ",
             };
 
-            string[] Sukunimet =                                                        // Sukunimien sanapankki
+            string[] Sukunimet =                                                                                                                                                        // Sukunimien sanapankki
             {
                 "Haanpää",    "Haapakoski",  "Haavisto",
                 "Hangen",     "Haikola",     "Haka",
@@ -205,11 +205,11 @@ namespace OlioProjekti
                 "Kiiveri",    "Kesäniemi",   "Kitunen",
             };
 
-            Random rnd = new Random();                                                  // Tehdään rnd olio
-            int number;                                                                 // Esitellään Random muuttuja
+            Random rnd = new Random();                                                                                                                                                  // Tehdään rnd olio
+            int number;                                                                                                                                                                 // Esitellään Random muuttuja
 
-            Oppilas[] oppilas = new Oppilas[27];                                        // Tehdään uudet oliot oppilaille
-            for (int i = 0; i < 27; i++)                                                // Luodaan sekä nimetään oppilaat ja oliot
+            Oppilas[] oppilas = new Oppilas[27];                                                                                                                                        // Tehdään uudet oliot oppilaille
+            for (int i = 0; i < 27; i++)                                                                                                                                                // Luodaan sekä nimetään oppilaat ja oliot
             {
                 oppilas[i] = new Oppilas();
 
@@ -221,8 +221,8 @@ namespace OlioProjekti
                 oppilas[i].OppilasNimi = oppnimi;
             }
 
-            Opettaja[] opettaja = new Opettaja[18];                                     // Tehdään uudet oliot opettajille
-            for (int i = 0; i < 18; i++)                                                // Luodaan sekä nimetään opettajat ja oliot
+            Opettaja[] opettaja = new Opettaja[18];                                                                                                                                     // Tehdään uudet oliot opettajille
+            for (int i = 0; i < 18; i++)                                                                                                                                                // Luodaan sekä nimetään opettajat ja oliot
             {
                 opettaja[i] = new Opettaja();
 
@@ -234,22 +234,22 @@ namespace OlioProjekti
                 opettaja[i].OpettajaNimi = openimi;
             }
 
-            Tutkinto tutkinto1 = new Tutkinto();                                        // Luodaan Tutkintojen oliot
+            Tutkinto tutkinto1 = new Tutkinto();                                                                                                                                        // Luodaan Tutkintojen oliot
             Tutkinto tutkinto2 = new Tutkinto();
             Tutkinto tutkinto3 = new Tutkinto();
 
-            tutkinto1.TutkintoNimike = "Tieto ja viestintätekniikka";                   // Annetaan TutkintoNimikkeiden arvot
+            tutkinto1.TutkintoNimike = "Tieto ja viestintätekniikka";                                                                                                                   // Annetaan TutkintoNimikkeiden arvot
             tutkinto2.TutkintoNimike = "Bioanalyytikko";
             tutkinto3.TutkintoNimike = "Hortonomi";
 
-            Opintojakso[] opintojakso = new Opintojakso[9];                             // Tehdään uusi olio
-            for (int i = 0; i < 9; i++)                                                 // Luodaan opintojaksojen oliot
+            Opintojakso[] opintojakso = new Opintojakso[9];                                                                                                                             // Tehdään uusi olio
+            for (int i = 0; i < 9; i++)                                                                                                                                                 // Luodaan opintojaksojen oliot
             {
                 opintojakso[i] = new Opettaja();
             }
 
             int plus = 1;
-            for (int i = 0; i <= 2; i++)                                                // Nimetään opintoNimike
+            for (int i = 0; i <= 2; i++)                                                                                                                                                // Nimetään opintoNimike
             {
                 opintojakso[i].OpintoNimike = "Syksy " + plus;
                 opintojakso[i + 3].OpintoNimike = "Talvi " + plus;
@@ -257,7 +257,7 @@ namespace OlioProjekti
                 plus++;
             }
 
-            opintojakso[0].Tutkinto = "Tieto ja viestintätekniikka";                    // OpintoJakson tutkinta kentän arvot
+            opintojakso[0].Tutkinto = "Tieto ja viestintätekniikka";                                                                                                                    // OpintoJakson tutkinta kentän arvot
             opintojakso[1].Tutkinto = "Bioanalyytikko";
             opintojakso[2].Tutkinto = "Hortonomi";
             opintojakso[3].Tutkinto = "Tieto ja viestintätekniikka";
@@ -265,11 +265,11 @@ namespace OlioProjekti
             opintojakso[5].Tutkinto = "Hortonomi";
             opintojakso[6].Tutkinto = "Tieto ja viestintätekniikka";
             opintojakso[7].Tutkinto = "Bioanalyytikko";
-            opintojakso[8].Tutkinto = "Hortonomi";                                      // OpintoJakson tutkinta kentän arvot
+            opintojakso[8].Tutkinto = "Hortonomi";                                                                                                                                      // OpintoJakson tutkinta kentän arvot
 
 
 
-            for (int i = 0; i < 27; i++)                                                // Antaa oppilas olioden oppilasopintojakso kentälle arvon
+            for (int i = 0; i < 27; i++)                                                                                                                                                // Antaa oppilas olioden oppilasopintojakso kentälle arvon
             {
                 if (i < 0 || i > 26)
                 {
@@ -314,7 +314,7 @@ namespace OlioProjekti
                 }
             }
 
-            for (int i = 0; i < 18; i++)                                    // antaa opettaja olilioden opettajaOpintojakso kentälle arvon
+            for (int i = 0; i < 18; i++)                                                                                                                                                // antaa opettaja olilioden opettajaOpintojakso kentälle arvon
             {
                 if (i < 0 || i > 17)
                 {
@@ -360,7 +360,7 @@ namespace OlioProjekti
             }
 
             opintoAlku:
-            Console.WriteLine("Valitse tutkinto alla olevista vaihtoehdoista");             // kysymis taulukko
+            Console.WriteLine("Valitse tutkinto alla olevista vaihtoehdoista");                                                                                                         // kysymis taulukko
             Console.WriteLine("------------------------------------------");
             Console.WriteLine(" Tieto ja viestintätekniikka..........[1]");
             Console.WriteLine(" Bioanalyytikko.......................[2]");
@@ -370,10 +370,10 @@ namespace OlioProjekti
             int valinta = int.Parse(Console.ReadLine());
             Console.WriteLine();
 
-            string[] OpintojaksoTaulukko = new string[3];           // luodaan uusi aray
+            string[] OpintojaksoTaulukko = new string[3];                                                                                                                               // luodaan uusi aray
 
             int laskuri = 0;        
-            switch (valinta)                                                            // laitetaan arayhin opintojaksot jotka ovat osana valittua tutkintoa
+            switch (valinta)                                                                                                                                                            // laitetaan arayhin opintojaksot jotka ovat osana valittua tutkintoa
             {
                 case 1:
                     for (int i = 0; i < 9; i++)
@@ -415,7 +415,7 @@ namespace OlioProjekti
             }
 
             Alku:
-            Console.WriteLine("Valitse opintojakso alla olevista vaihtoehdoista");          // kysyntä taulukko
+            Console.WriteLine("Valitse opintojakso alla olevista vaihtoehdoista");                                                                                                      // kysyntä taulukko
             Console.WriteLine("----------------------");
             Console.WriteLine(" {0}..........[1]", OpintojaksoTaulukko[0]);
             Console.WriteLine(" {0}..........[2]", OpintojaksoTaulukko[1]);
@@ -425,11 +425,11 @@ namespace OlioProjekti
             int valinta1 = int.Parse(Console.ReadLine());
             Console.WriteLine();
 
-            string[] OppilasTaulukko = new string[3];                                       // tehdään uusi aray
-            string[] OpettajaTaulukko = new string[2];                                      // tehdäänt uusi aray
+            string[] OppilasTaulukko = new string[3];                                                                                                                                   // tehdään uusi aray
+            string[] OpettajaTaulukko = new string[2];                                                                                                                                  // tehdäänt uusi aray
 
             laskuri = 0;
-            switch (valinta1)                                                               // tallenetaan opilaiten nimet arayhin jotka ovat osana valittua opintojaksoa
+            switch (valinta1)                                                                                                                                                           // tallenetaan opilaiten nimet arayhin jotka ovat osana valittua opintojaksoa
             {
                 case 1:
                     for (int i = 0; i < 27; i++)
@@ -465,7 +465,7 @@ namespace OlioProjekti
 
                     laskuri = 0;
 
-                    for (int i = 0; i < 18; i++)                                            // tallenetaan opettaijien nimet arayhin jotka ovat osana valittua opintojaksoa
+                    for (int i = 0; i < 18; i++)                                                                                                                                        // tallenetaan opettaijien nimet arayhin jotka ovat osana valittua opintojaksoa
                     {
                         if (opettaja[i].OpettajaOpintojakso == OpintojaksoTaulukko[0])
                         {
@@ -503,12 +503,13 @@ namespace OlioProjekti
                     goto Alku;
             }
 
-            Console.WriteLine("Tässä on {0} osallistujat:", OpintojaksoTaulukko[valinta1 - 1]);                                         //tulostetaan mikä opintoajakso on ja monta opetajaa ja oppilasta on kursilla ja niiden nimet
+            Console.WriteLine("Tässä on {0} osallistujat:", OpintojaksoTaulukko[valinta1 - 1]);                                                                                         //tulostetaan mikä opintoajakso on ja monta opetajaa ja oppilasta on kursilla ja niiden nimet
             Console.WriteLine("-----------------------------------------------------------------------------------------");
             Console.WriteLine(" Osallistuvia oppilaita on {0}. Oppilaat ovat: {1}, {2}, {3}", OppilasTaulukko.Length, OppilasTaulukko[0], OppilasTaulukko[1], OppilasTaulukko[2]);
             Console.WriteLine(" Osallistuvia opettajia on {0}. Opettajat ovat: {1}, {2}", OpettajaTaulukko.Length, OpettajaTaulukko[0], OpettajaTaulukko[1]);
             Console.WriteLine("-----------------------------------------------------------------------------------------");
 
+            Console.WriteLine("Luotujen Oppilas olioiden määrä: {0}", Oppilas.laskuri);
         }
     }
 }
