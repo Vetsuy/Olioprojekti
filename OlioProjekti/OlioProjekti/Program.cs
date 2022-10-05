@@ -14,15 +14,33 @@ namespace OlioProjekti
         // Metodit
         public void Kirjaudu()                                                                  // "Kirjaa" käyttäjän sisään järjestelmään kun käyttäjä antaa käyttäjänimen ja salasanan
         {
-            Console.WriteLine("                | -Kirjaudu sisään- |");
+            Console.WriteLine("                | -Luo uusi käyttäjä- |");
             Console.WriteLine();
             Console.Write("Käyttäjänimi: ");
             kayttaja = Console.ReadLine();
             Console.Write("Salasana: ");
             salasana = Console.ReadLine();
+            Console.WriteLine();
+
+        alku:
+            Console.WriteLine("                 | -Kirjaudu sisään- |");
+            Console.WriteLine();
+            Console.Write("Käyttäjänimi: ");
+            string annettu_kayttajanimi = Console.ReadLine();
+            Console.Write("Salasana: ");
+            string annettu_salasana = Console.ReadLine();
+
+            if (kayttaja != annettu_kayttajanimi || salasana != annettu_salasana)
+            {
+                Console.WriteLine();
+                Console.WriteLine("!!! Käyttäjänimi tai salasana on väärin, yritä uudestaan. !!!");
+                Console.WriteLine();
+                goto alku;
+            }
 
             Console.WriteLine();
             Console.WriteLine("Tervetuloa käyttämään järjestelmäämme {0}!", kayttaja);
+            Console.WriteLine();
         }
 
         // Oletuskonstruktori
@@ -155,7 +173,7 @@ namespace OlioProjekti
             Console.WriteLine();
 
             AMK amk = new();
-            // amk.Kirjaudu();
+            amk.Kirjaudu();
 
             string[] Etunimet =                                                         // Etunimien sanapankki
             {
